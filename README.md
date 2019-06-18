@@ -33,6 +33,8 @@ For example:
 ppCalc.py -u 124493
 ```
 
+**User check can get up to 3-5 minutes if maps from user's best scores arent in base.**
+
 **And for map check:**
 
 ```powershell
