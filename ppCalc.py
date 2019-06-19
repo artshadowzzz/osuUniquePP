@@ -175,7 +175,7 @@ class mapDataReceiver:
                 ppDiff = recalcPP - float(self.mapScoresList[a]["pp"])
                 ppDiff = "%.2f" % ppDiff
             else: 
-                recalcPP = 0
+                recalcPP = float(self.mapScoresList[a]["pp"])
                 ppDiff = 0
 
             updatedMapScoresDict = {
@@ -225,7 +225,7 @@ class userDataReceiver:
                 recalcPP = ppReCalc(float(self.userScoresList[a]["pp"]), mapData.tpAmout)
                 ppDiff = (recalcPP - float(self.userScoresList[a]["pp"]))
             else:
-                recalcPP = 0
+                recalcPP = float(self.userScoresList[a]["pp"])
                 ppDiff = 0
             self.updatedPP += (recalcPP * (0.95 ** a))
 
